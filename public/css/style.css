@@ -1,0 +1,305 @@
+
+li{
+     list-style-type: none;
+}
+nav .show{
+     background-color: #9b9999;
+     padding: 10px;
+     gap: 5px;
+     display: grid;
+     transition: all 0.5s linear;
+
+}
+.navbar-scrolled{
+     background-color: black;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+     transition: all 0.5s linear;
+}
+
+a{
+     text-decoration: none;
+}
+.nav-link{
+     font-family: "Poppins", system-ui;
+     font-weight: 500;
+     font-size: 12px;
+}
+
+.banner{
+     background: url('/images/bannerdesktop.webp') no-repeat ;
+     background-size: cover;  
+}
+.fa-phone{
+     background-color: #fff;
+     font-size: 10px;
+     color: black;
+     padding: 4px;
+     border-radius: 5px;
+}
+.text-rel{
+     position: relative;
+}
+.text1{
+     display: none;
+      
+}
+.text2{
+     display: block;
+     position: absolute;
+     left: 0;
+     opacity: 1;
+     top: 0;
+     z-index: 10;
+     height: 100%;
+     width: 80%;
+     background-color: #929191;
+     color: #fff ;
+     display: flex;
+     text-decoration: none;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+}
+.just{
+     position: relative;
+     font-family: "Raleway", sans-serif;
+     font-size: 30px;
+     font-weight: 600;
+     width: max-content;
+     
+}
+.redbox{
+     width: 13px;
+     height: 14px;
+     right: 3px;
+     background-color: #d62c2c;
+     position: absolute;
+     bottom: auto;
+     z-index: -1;
+     animation: bounce 2s;
+     transform: translateY(0px);
+     animation-iteration-count: infinite;
+}
+@keyframes bounce{
+     0%{
+          transform: translateY(0px);
+     }
+     50%{
+          transform: translateY(20px);
+     }
+     100%{
+          transform: translateY(0px);
+     }
+}
+.head{
+     font-size: 26px;
+     font-weight: 600;
+     color: #d62c2c;
+     margin-bottom: 10px;    
+}
+.content{
+     font-size: 16px;
+     line-height: 1.5;
+     color: #b3b3b3;
+     font-family: 'Poppins', sans-serif;
+     text-align: justify;
+     margin-bottom: 15px;
+}
+.award{
+     font-size: 20px;
+     font-weight: 600;
+     color: red;
+     animation: 1.5s ease-in-out infinite up;
+}
+@keyframes up{
+     0%,100%,40%{
+          transform: translateY(0);
+     }
+     20%{
+          transform: translateY(-20px);
+     }
+}
+
+.video video{
+     width: 100%;
+}
+.cards-cont{
+     display: flex;
+     gap: 15px;
+     justify-content: space-evenly;
+     
+}
+.cards-cont .bg-black{
+     /* padding: 2px; */
+     border-radius: 5px;
+}
+
+.content-card{
+     /* padding: 5px; */
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     justify-content: center;
+     align-items: center;
+     /* height: 350px; */
+     margin: 10px;
+}
+.content-card:hover{
+     background-color: transparent;
+     border: 1px solid white;
+     transition: 0.2s linear;
+}
+.content-para{
+     font-size: 12px;
+     line-height: 20px;
+
+}
+.content-card a{
+     font-weight: 700;
+}
+.content-card a:hover{
+     font-weight: 700;
+     letter-spacing: 1.5px;
+}
+.card-image{
+     width: 100%;
+     height: 300px;
+     padding: 0;
+}
+.card-image img{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+.image-cont{
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     color: white !important;
+     background: rgba(0, 0, 0, 0.7);
+     font-weight: 600;
+     opacity: 0;
+     transition: all 0.5s linear;
+}
+.image-cont:hover{
+     opacity: 1;
+}
+.pan{
+     font-size: 28px;
+}
+.carousel-control-prev{
+     width: 5%;
+     justify-content: start;
+}
+.carousel-control-next{
+     justify-content: end;
+     width: 5%;
+}
+.fa-less-than,.fa-greater-than{
+     font-size: 24px;
+     padding: 5px;
+}
+
+.caro-back{
+     margin-top: 30px;
+     background: url('../images/logoback.jpg');
+}
+.caro-heading{
+     padding-top: 5%;
+     padding-bottom: 5%;
+     font-family: Raleway;
+     font-size: 28px;
+     font-weight: 600;
+     color: #fff;
+}
+.caro-span{
+     color: #d62c2c;
+     font-size: 28px;
+     font-weight: 600;
+     font-family: 'Raleway', sans-serif;
+}
+
+.change{
+     position: relative;
+ }
+ #black{
+     position: absolute;
+     width:50%;
+ }
+#color{
+    visibility: hidden;
+    width:52.7%;
+}
+.change:hover{
+     #color{
+         visibility: visible;
+     }
+     #black{
+          visibility: hidden;
+     }
+ }
+ .caro-row{
+     padding-bottom: 100px;
+     
+ }
+#testimonial p{
+     font-family: "Poppins", system-ui;
+     text-align: justify;
+     font-size: 16px;
+     line-height: 1.8;
+
+
+}
+ 
+ .social-cont{
+     margin-bottom:35px;
+ }
+ .test-cont{
+     height: 350px;
+ }
+ .test-space{
+     margin-top: 30px;
+ }
+ .foot-head{
+     font-size: 22px;
+     font-family: "Poppins", system-ui;   
+}
+
+#footer  > * {
+      font-family: "Poppins", system-ui;  
+     
+ }
+ .address{
+     line-height: 20px;
+ }
+
+ @media (max-width:768px){
+     .caro1{
+          width: 100%;
+     }
+     .cards-cont{
+          flex-wrap: wrap;
+     }
+   .caro{
+     flex-direction: column !important;
+     gap: 20px;
+
+   }
+   .card-image img{
+     height: 100% !important;
+   }
+   .caro-img{
+     width: 80%;
+}
+.caro-cont{
+        width: 80%;
+   }
+   .social .col-md-3 a img{
+          width: 100vw;
+   }
+ }
